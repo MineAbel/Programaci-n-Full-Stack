@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Boldonse&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playball&family=Playwrite+HU:wght@100..400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Boldonse&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playball&family=Playwrite+HU:wght@100..400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Boldonse&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playball&family=Playwrite+HU:wght@100..400&family=Rowdies:wght@300;400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'kanit';
+}
+
+
+
+body {
+    background-image: url(https://www.lamañana.uy/wp-content/uploads/2024/02/inteligencia-artificial.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: none ;
+    transition: 1s;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    background-color: darkslategray;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex; 
+    justify-content:space-around;
+}
+
+.buttons > a {
+    font-size: 20px;
+    padding: 30px;
+    list-style-type: none;
+    transition: 1s;
+}
+
+.buttons > a:hover {
+    color: rgb(255, 255, 255);
+    scale: 1.06;
+    background-color:  rgb(35, 65, 65);
+    transition: 1s;
+}
+
+.title {
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+#que-es {
+    padding: 20px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-top: 3rem;
+    background-color: rgba(95, 158, 160, 0.829);
+    margin-bottom: 2rem;
+}
+
+#que-es > h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#que-es > p {
+    text-align: center;
+    margin-left: 20%;
+    width: 60%;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#que-es > img {
+    width: 45%;
+    margin-left: 28%;
+}
+
+#tipos {
+    padding: 20px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-top: 3rem;
+    background-color: rgba(95, 158, 160, 0.829);
+    margin-bottom: 2rem;
+}
+
+#tipos > h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+#tipos > ul > div > li {
+    font-size: 22px;
+    margin-left: 30px;
+    transition: 1s;
+}
+
+#tipos > ul > div > p {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-50px);
+    max-height: 0;
+    transition: 0.5s;
+}
+
+#tipos > ul > div:hover > p {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 500px;
+    transition: 2s;
+}
+
+#tipos > ul > div {
+    padding: 30px;
+    width: 60%;
+    transition: 1s;
+}
+
+#tipos > ul > div:hover {
+  background-color: rgb(70, 121, 122) ;
+  transition: 1s;
+}
+
+#tipos > img {
+    width: 30%;
+    float: right;
+    transition: 1s;
+}
+
+#tipos > img:hover {
+    scale: 1.02;
+    transition: 1s;
+}
+
+footer {
+background-color: rgb(71, 73, 73); 
+padding-top: 30px;
+padding-bottom: 30px;
+margin-top: 3rem;
+text-align: center; 
+color: #fff; 
+justify-content: center; 
+font-size: 20px; 
+width: 100%; 
+}
+
+footer > p >  a {
+    color: #fff; 
+}
+
+#aplicaciones {
+    padding: 20px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-top: 3rem;
+    background-color: rgba(95, 158, 160, 0.829);
+    margin-bottom: 2rem;
+}
+
+#aplicaciones > h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    margin-left: 22px;
+}
+
+#aplicaciones > ul > div > li {
+    font-size: 23px;
+    margin-left: 28px;
+    list-style-type: none;
+}
+
+#aplicaciones > ul > div > li::before {
+    content: "➤ ";
+    color: rgb(22, 64, 119);
+    margin-right: 0.5em;
+}
+
+#aplicaciones > ul > div > p {
+    font-size: 18px;
+    padding: 15px;
+    transition: 1s;
+}
+
+
+#aplicaciones > ul > div {
+    padding: 20px;
+    transition: 1s;
+}
+
+#aplicaciones > ul > div:hover {
+    background-color: rgba(121, 188, 190, 0.829);
+    transition: 1s;
+}
+
+#futuro {
+    padding: 300px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-top: 3rem;
+    background-color: rgba(95, 158, 160, 0.829);
+    margin-bottom: 2rem;
+}
+
+#futuro > h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+#futuro > p {
+    font-size: 18px;
+}
