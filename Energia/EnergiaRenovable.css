@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Boldonse&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playball&family=Playwrite+HU:wght@100..400&family=Rowdies:wght@300;400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'kanit';
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: none;
+    transition: 1s;
+}
+
+body {
+    background-color: rgb(217, 241, 216);
+}
+ 
+header {
+    display: flex; 
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #27ae60;
+}
+
+.tituloPrincipal {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header > div > h2 {
+    width: 90%;
+    padding: 20px;
+    font-size: 40px;
+    margin-left: 2% ;
+    text-align: center;
+    color: aliceblue;
+}
+
+header > div > h3 {
+    float: right;
+    font-size: 30px;
+    margin-top: 3%;
+}
+
+nav {
+    display: flex; 
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background-color: #49d181;
+    width: 90%;
+    margin: 20px;
+    margin-left: 5%;
+}
+
+nav > a > h2 {
+    font-size: 20px;
+    padding: 12px;
+}
+
+nav > a:hover {
+    background-color: #1b914c;
+    scale: 1.05;
+    transition: 1s;
+}
+
+.contenedor {
+    width: 62%;
+    margin-left: 20%;
+}
+
+.titulos {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.informacion > div {
+    margin-top: 20px;
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+    background-color: #d1f2e6;
+}
+
+.informacion > div > h2 {
+    color: #148f77;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.informacion > div > p {
+font-size: 15px;
+}
+
+.imagen {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.informacion_imagen {
+ width: 100%;
+ margin: 20px;
+ margin-bottom: 20px;
+ border-radius: 20px;
+}
+
+.beneficios {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 10px;
+    background-color: #acddc1;
+    padding: 10px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.Ahorro {
+    padding: 10px;
+}
+
+.energia {
+    padding: 10px;
+}
+
+.cuidado {
+    padding: 10px;
+}
+
+.beneficios > div {
+    margin-top: 20px;
+}
+
+.beneficios > div > p {
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.beneficios > div > h2 {
+    font-size: 20px;
+}
+
+.icono-planta {
+    float: right;
+}

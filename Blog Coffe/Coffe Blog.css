@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Boldonse&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playball&family=Playwrite+HU:wght@100..400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 header {
- width: 100%;
- height: 140px;
+ display: flex;
+ flex-wrap: wrap;
+ padding: 15px;
  background-image: url(https://www.shutterstock.com/image-vector/abstract-brown-psychedelic-waves-print-260nw-2517530723.jpg);
  background-repeat: no-repeat;
  background-size: cover;
@@ -17,8 +18,9 @@ header {
 header > h2 {
     color: aliceblue;
     font-size: 40px;
+    width: 100%;
     padding-left: 30px;
-    padding-top: 15px;
+    padding-top: 10px;
     font-family: Playwrite HU, boldonse ;
 }
 
@@ -26,9 +28,12 @@ header > h2 {
     display: flex;
     justify-content: space-between;
     margin-left: 10px;
-    margin-top: 5px;
-    width: 20%;
-    padding: 10px;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.botones > h3 {
+  margin-left: 20px;
 }
 
 a {
@@ -48,15 +53,18 @@ a:hover {
 }
 
 .divTitulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
     text-align: center;
     width: auto;
     height: auto;
     padding: 20px;
-}
+} 
 
 .divTitulo > h2 {
     color: aliceblue;
-    text-align: center;
     margin-top: 10px;
     margin-bottom: 15px;
     font-size: 40px;
@@ -65,25 +73,47 @@ a:hover {
 .divTitulo > p {
     color: aliceblue;
     font-size: 23px;
-    text-align: center;
     margin-bottom: 25px;
-    width: 60% ;
-    margin-left: 250px;
+    padding: 20px;
 }
+
 
 body {
     background-color: rgba(88, 63, 24, 0.644);
 }
 
+.div_cafes {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+
+
+.img_cafe {
+    height: 200px;
+    width: 320px;
+    margin: 0;
+    padding: 6%;
+    padding-bottom: 10px;
+    padding-top: 5%;
+    transition: 1s;
+}
+
 .cafes {
+    text-align: center;
     padding: 20px;
-    width: 90%;
-    margin-right: 20px;
-    margin-left: 20px;
+    width: 360px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.452);
     margin-bottom: 2rem;
     border-radius: 10px;
     font-family: Kanit;
     background-color: antiquewhite;
+    transition: 1s;
+}
+
+.cafes:hover {
+   scale: 1.025;
+   transition: 1s;
 }
 
 .cafes > h2 {
@@ -94,14 +124,6 @@ body {
     font-size: 18px;
 }
 
-.cafes > img {
-    margin-bottom: 10px;
-    margin-top: 20px;
-    width: auto;
-    border-radius: 10px;
-    height: 300px;
-    transition: 1s;
-}
 
 .cafes > img:hover {
     scale: 1.05;

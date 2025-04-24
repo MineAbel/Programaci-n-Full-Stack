@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'kanit';
+}
+
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-decoration-color: none;
+    transition: 1s;
+}
+
+header {
+    display: flex; 
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+
+header > div {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.direccion {
+    font-size: 17px;
+    padding:8px;
+    margin-top: 20px;
+}
+
+.menu {
+    font-size: 25px;
+    padding:8px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.buttons {
+    display: flex; 
+    justify-content:space-around;
+}
+
+.buttons > a {
+    font-size: 20px;
+    padding: 18px;
+    list-style-type: none;
+    transition: 1s;
+}
+
+.buttons > a:hover {
+    color: rgb(255, 255, 255);
+    scale: 1.05;
+    background-color:rgb(128, 53, 197);
+    transition: 1s;
+}
+
+.title {
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color:rgb(171, 99, 238);
+    margin-bottom: 20px;
+}
+
+nav > ul > h2 {
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+nav > ul > h1 {
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    font-size: 35px;
+    transition: 1s;
+}
+
+nav > ul > h1:hover {
+    scale: 1.05;
+    transition: 1s;
+}
+
+header > div > img {
+    width: 80px;
+}
+
+header > div > button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0;
+    margin-top: 17px;
+    height: 45px;
+    border-color: blue;
+    color: blue;
+    cursor: pointer;
+    transition: 1s;
+}
+
+header > div > button:hover {
+   scale: 1.05;
+   background-color: blue;
+   border-color: rgb(255, 255, 255);
+   color: rgb(255, 255, 255);
+   transition: 1s;
+}
+
+nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#search1 {
+    margin-left: 200px
+}
+
+.search {
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 10px;
+    height: 800px;
+
+
+    grid-template-areas: 
+        'primeranoticia primeranoticia blanco segundanoticia'
+        'primeranoticia primeranoticia terceranoticia terceranoticia'
+        'noticiacorta1 noticiacorta2 cuartanoticia cuartanoticia'
+    ;
+}
+
+.primeranoticia {
+    grid-area: primeranoticia;
+    background-color: aqua;
+}
+
+.segundanoticia {
+    grid-area: segundanoticia;
+    background-color: rgb(255, 0, 0);
+}
+
+.terceranoticia {
+    grid-area: terceranoticia;
+    background-color: rgb(119, 0, 255);
+}
+
+.cuartanoticia {
+    grid-area: cuartanoticia;
+    background-color: rgb(115, 255, 0);
+}
+
+.noticiacorta1 {
+    grid-area: noticiacorta1;
+    background-color: rgb(208, 255, 0);
+}
+
+.noticiacorta2 {
+    grid-area: noticiacorta2;
+    background-color: rgb(255, 0, 234);
+}
+
+.galeria > div > img {
+}

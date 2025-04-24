@@ -1,0 +1,78 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    
+    .grid-container{
+    
+    
+        /* defino el display grid */
+        display: grid;
+        /* defino el template de columnas y filas
+        puedo usar la funcion repeat() o hacerlo 1fr 1fr 1fr
+        fr significa fraccion */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    
+        /*puedo definir las diferentes secciones de la pagina en areas*/
+        grid-template-areas: 
+        'header header header barralateral'
+        'seccion1 seccion1 seccion1 barralateral'
+        'seccion1 seccion1 seccion1 barralateral'
+        'seccion2 seccion2 seccion2 barralateral'
+        'seccion2 seccion2 seccion2 barralateral'
+        'footer footer footer footer';
+        
+
+        text-align: center;
+                
+    
+    }
+
+    .grid-container > div >  h1 {
+    }
+    
+    .hijo1{
+        grid-area: header;
+        padding: 1rem;
+        background-color: aqua;
+    }
+    
+    .hijo2{
+       
+        grid-area: seccion1;
+        background-color: palevioletred;
+    }
+    
+    .hijo3{
+        
+        grid-area: seccion2;
+        background-color: blueviolet;
+    }
+    
+    .hijo4{
+        grid-area: barralateral;
+        background-color: brown;
+    }
+
+    .hijo5{
+    
+        grid-area: footer;
+        background-color:coral ;
+    }
+    
+    .hijo1, .hijo2,  .hijo3 , .hijo4, .hijo5{
+        padding: 3rem;
+    }
+    
+    @media(min-width: 768px){
+    
+    body{
+    
+        font-size: 10px;
+    }
+    
+    }

@@ -9,10 +9,10 @@
   --no: none;
   --one-second: 1s;
   --pixeles-20: 20px;
-}
+} 
 
 
-* {
+* { 
     padding: 0;
     margin: 0;
     font-family: 'kanit';
